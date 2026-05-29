@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X9.Calm</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .tag {
+      font-size: 15px;
+      color: #666;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 40px;
+    }
+
+    .hero h1 {
+      font-size: 82px;
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      font-size: 26px;
+      color: #aaa;
+      max-width: 760px;
+      margin-bottom: 60px;
+    }
+
+    .cta {
+      background: #fff;
+      color: #000;
+      padding: 22px 60px;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.4s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(255,255,255,0.25);
+    }
+
+    section {
+      padding: 120px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background: #111;
+      padding: 40px;
+      border-radius: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: #111;
+      border: 1px solid #333;
+      color: #fff;
+      padding: 18px;
+      border-radius: 12px;
+      font-size: 17px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: #fff;
+      color: #000;
+      padding: 20px 60px;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">X9.CALM</div>
+    <div class="tag">🐊💎🥶 • Rock GROKSGUWS • Canmore, Alberta</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Calm Foundation.<br>Armored Precision.<br>Diamond Execution.</h1>
+    <p>Unified portfolio of manufacturing, commerce infrastructure, and strategic vision.<br>Built in Canmore, Alberta.</p>
+    <a href="#projects" class="cta">Explore All Projects</a>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 style="font-size:48px; text-align:center; margin-bottom:80px;">Portfolio</h2>
+    
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:40px;">
+      
+      <div class="project-card">
+        <h3>X9Elysium</h3>
+        <p style="color:#aaa;">Shopify Plus consulting for Canadian & U.S. retailers.</p>
+        <p><strong>50+ projects • 98% retention • 40%+ revenue lift</strong></p>
+      </div>
+
+      <div class="project-card">
+        <h3>Hindustan Organics</h3>
+        <p style="color:#aaa;">Premium industrial chemicals & high-purity solvents.</p>
+        <p><strong>Paaske 1060 • High-Purity Solvent</strong></p>
+      </div>
+
+      <div class="project-card">
+        <h3>GROKELONMUSK</h3>
+        <p style="color:#aaa;">Personal foundation. Strategic vision. Canmore, Alberta.</p>
+        <p><strong>GrokFireWater • Rock GROKSGUWS</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form (Netlify Forms Enabled) -->
+  <section id="contact" style="background:#111;">
+    <h2 style="font-size:48px; text-align:center; margin-bottom:60px;">Get in Touch</h2>
+    
+    <form name="contact" method="POST" data-netlify="true" style="max-width:700px; margin:0 auto;">
+      <input type="hidden" name="form-name" value="contact" />
+      
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <p style="text-align:center; margin-top:40px; color:#666;">
+      Darshan Patel • CO XO • Canmore, Alberta, Canada
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#000; padding:80px 40px; text-align:center; font-size:15px; color:#555;">
+    <p>Built with armored patience. Launched with diamond precision.</p>
+  </footer>
+
+</body>
+</html>
